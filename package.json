@@ -1,0 +1,27 @@
+{
+  "name": "image_shriker",
+  "ProductName": "Image Shrinker App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "nodemon --exec electron .",
+    "package-win": "electron-packager . Image Shrinker App --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icon/icon.png --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Image Shrinker App\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.7",
+    "electron-packager": "^15.5.1"
+  },
+  "dependencies": {
+    "compress-images": "^2.0.5",
+    "gifsicle": "^5.2.1",
+    "nodemon": "^2.0.18",
+    "pngquant-bin": "^6.0.1"
+  },
+  "type": "commonjs"
+}
